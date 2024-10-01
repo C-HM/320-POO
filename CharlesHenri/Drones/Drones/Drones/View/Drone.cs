@@ -22,4 +22,35 @@ namespace Drones
         }
 
     }
+    public partial class Buliding
+    {
+        private Pen BulidingsBrush = new Pen(new SolidBrush(Color.Purple), 3);
+        public void Render(BufferedGraphics drawingSpace)
+        {
+            drawingSpace.Graphics.DrawRectangle(BulidingsBrush, new Rectangle(x - 4, y - 2, 20, 20));
+            drawingSpace.Graphics.DrawString($"{this}", TextHelpers.drawFont, TextHelpers.writingBrush, x + 5, y - 5);
+        }
+    }
+    public class Factory : Buliding
+    {
+        private int PowerConsumption;
+
+        private Pen FactoryBrush = new Pen(new SolidBrush(Color.Black), 3);
+        public new void Render(BufferedGraphics drawingSpace)
+        {
+            drawingSpace.Graphics.DrawRectangle(FactoryBrush, new Rectangle(x - 4, y - 2, 40, 60));
+            drawingSpace.Graphics.DrawString($"{this}", TextHelpers.drawFont, TextHelpers.writingBrush, x + 5, y - 5);
+        }
+    }
+    public class Store : Buliding
+    {
+        private string openingHours;
+
+        private Pen StoreBrush = new Pen(new SolidBrush(Color.Black), 3);
+        public new void Render(BufferedGraphics drawingSpace)
+        {
+            drawingSpace.Graphics.DrawEllipse(StoreBrush, new Rectangle(x - 4, y - 2, 15, 15));
+            drawingSpace.Graphics.DrawString($"{this}", TextHelpers.drawFont, TextHelpers.writingBrush, x + 5, y - 5);
+        }
+    }
 }

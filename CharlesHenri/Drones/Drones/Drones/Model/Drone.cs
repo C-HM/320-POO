@@ -20,5 +20,21 @@
             charge--;                                  // Il a dépensé de l'énergie
         }
 
+
+        public int Id { get; set; }
+
+        public Drone(int id)
+        {
+            Id = id;
+        }
+    }
+    public partial class Buliding
+    {
+        public int charge = 1000;
+        public int x;
+        public int y;
+        public int width;
+        public int height;
+        public string color;
     }
 }
