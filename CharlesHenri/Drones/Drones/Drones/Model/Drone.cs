@@ -21,9 +21,10 @@
         }
 
 
-        public int Id { get; set; }
+        public string Id { get; set; }
 
-        public Drone(int id)
+
+        public Drone(string id)
         {
             Id = id;
         }
@@ -37,4 +38,6 @@
         public int height;
         public string color;
     }
+
+
 }
