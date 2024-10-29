@@ -3,11 +3,13 @@
 Comme vu dans le document, nous pouvons effectuer des diagrammes de classes.
 
 ## Objectif
+
 Créer deux objets de types distincts :
+
 1. **Un objet de type "Boat"**
 2. **Un objet de type "Container"**
 
-## Étape 1 : Création d'un objet "Container" et Boat à partir de l'interface 
+## Étape 1 : Création d'un objet "Container" et Boat à partir de l'interface
 
 ## Étapes de l'exercice
 
@@ -15,7 +17,7 @@ Créer deux objets de types distincts :
 2. Coder la classe Container
 3. Coder la classe Boat
 
-## Étape 2 : Coder trois classes enfants qui héritent de Container: 
+## Étape 2 : Coder trois classes enfants qui héritent de Container:
 
     - 1 classe `SensitiveContainer`
     - 1 classe `RefrigeratedContainer`
